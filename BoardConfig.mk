@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2014 The Mokee Opensource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -51,11 +51,11 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 01000000 --tags_offset 00000100 --dt $(PLATFORM_PATH)/dt.img
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_CONFIG := opx_defconfig
-TARGET_KERNEL_SOURCE := kernel/oneplus/msm8974
+TARGET_KERNEL_SOURCE := kernel/oneplus/onyx
 
 # Enable DIAG on debug builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
-TARGET_KERNEL_ADDITIONAL_CONFIG:= cyanogenmod_debug_config
+TARGET_KERNEL_ADDITIONAL_CONFIG:= mokee_debug_config
 endif
 
 # ANT+
@@ -86,11 +86,11 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 # Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
-# CM Hardware
+# MK Hardware
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS += \
-    device/oneplus/onyx/cmhw \
-    hardware/cyanogen/cmhw
+    device/oneplus/onyx/mkhw \
+    hardware/mokee/mkhw
 
 # Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
