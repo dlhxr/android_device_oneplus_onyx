@@ -92,6 +92,7 @@ vendor/lib/libchromatix_imx214_default_video.so
 vendor/lib/libchromatix_imx214_video_binning.so
 vendor/lib/libchromatix_ov5648_default_video.so
 vendor/lib/libchromatix_ov8858_default_video.so
+vendor/lib/libchromatix_ov8858_small_video.so
 vendor/lib/libchromatix_s5k3m2_default_video.so
 vendor/lib/libchromatix_imx214_preview_binning.so
 vendor/lib/libchromatix_ov8858_preview_binding.so
