@@ -51,18 +51,18 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 01000000 --tags_offset 00000100 --dt $(PLATFORM_PATH)/dt.img
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_CONFIG := opx_defconfig
-TARGET_KERNEL_SOURCE := kernel/oneplus/msm8974
+TARGET_KERNEL_SOURCE := kernel/oneplus/onyx
 
 # Enable DIAG on debug builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
-TARGET_KERNEL_ADDITIONAL_CONFIG:= cyanogenmod_debug_config
+TARGET_KERNEL_ADDITIONAL_CONFIG:= mokee_debug_config
 endif
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
 # Assert
-# TARGET_OTA_ASSERT_DEVICE := onyx,E1003
+# TARGET_OTA_ASSERT_DEVICE := ONE,OnePlus
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
@@ -88,9 +88,9 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 # Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
-# CM Hardware
+# MK Hardware
 BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += $(PLATFORM_PATH)/cmhw
+BOARD_HARDWARE_CLASS += $(PLATFORM_PATH)/mkhw
 
 # Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
