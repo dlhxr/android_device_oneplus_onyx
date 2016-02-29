@@ -1,0 +1,20 @@
+[
+  {
+    "remote":      "github",
+    "repository":  "CyanogenMod/android_device_oppo_common",
+    "revision":    "cm-13.0",
+    "target_path": "device/oppo/common"
+  },
+  {
+    "remote":      "github",
+    "repository":  "CyanogenMod/android_external_sony_boringssl-compat",
+    "revision":    "cm-13.0",
+    "target_path": "external/sony/boringssl-compat"
+  },
+  {
+    "remote":      "github",
+    "repository":  "CyanogenMod/android_external_stlport",
+    "revision":    "cm-13.0",
+    "target_path": "external/stlport"
+  }
+]
