@@ -1,0 +1,3 @@
+on boot
+    write /proc/touchpanel/keypad_enable 0
+    write /proc/touchpanel/double_tap_enable 1
